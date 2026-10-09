@@ -1,6 +1,6 @@
 #user 1
 resource "aws_instance" "demo_user1" {
-  ami                         = "ami-0b6d9d3d33ba97d99"
+  ami                         = "ami-08e3b3155fc937a94"
   instance_type               = "t3.micro"
   key_name                    = "devops-key"
   associate_public_ip_address = true
@@ -17,7 +17,7 @@ resource "aws_instance" "demo_user1" {
 
 #user 2
 resource "aws_instance" "demo_user2" {
-  ami                         = "ami-0b6d9d3d33ba97d99"
+  ami                         = "ami-08e3b3155fc937a94"
   instance_type               = "t3.micro"
   key_name                    = "devops-key"
   subnet_id                   = aws_subnet.pub-subnet-2.id
