@@ -1,5 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install -y docker.io
+set -euxo pipefail
+
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get install -y docker.io
 systemctl enable --now docker
